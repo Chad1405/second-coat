@@ -38,7 +38,7 @@ Both skills read the shared `references/` folder, so keep the repo structure int
 
 ## Install
 
-As a Claude Code plugin:
+As a Claude Code plugin. In a Claude Code chat, run `/plugin marketplace add Chad1405/second-coat`, then `/plugin install second-coat@second-coat`. Or from a terminal, if the `claude` CLI is installed (`npm i -g @anthropic-ai/claude-code`):
 
 ```bash
 claude plugin marketplace add Chad1405/second-coat
