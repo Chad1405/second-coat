@@ -41,7 +41,7 @@ Both skills read the shared `references/` folder, so keep the repo structure int
 As a Claude Code plugin:
 
 ```bash
-claude plugin marketplace add <path-or-git-url-to-this-repo>
+claude plugin marketplace add Chad1405/second-coat
 ```
 
 ```bash
