@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "second-coat",
+  "owner": { "name": "chadd" },
+  "metadata": {
+    "description": "Website design skills that remove the tells of AI-generated design."
+  },
+  "plugins": [
+    {
+      "name": "second-coat",
+      "description": "fresh-coat builds a site from scratch; second-coat audits or redesigns an existing one.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "design",
+      "tags": ["design", "frontend", "ui", "ux", "web"]
+    }
+  ]
+}

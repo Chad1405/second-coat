@@ -1,0 +1,6 @@
+{
+  "name": "second-coat",
+  "description": "Two design skills that keep AI-built websites from looking AI-built: fresh-coat (build from scratch) and second-coat (audit or redesign an existing site).",
+  "version": "0.1.0",
+  "skills": "./skills/"
+}
