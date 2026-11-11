@@ -79,7 +79,7 @@ Severities: **Bug** (broken for someone: contrast, focus, overflow, broken link)
 
 ## 3. Inspire
 
-After a short audit summary (score, verdict, top five findings), offer **three directions that differ from each other and from the current site**, each as a Direction card (see `../fresh-coat/SKILL.md` §2): dials, colour, type, surface, signature, and one line on what it changes about how the site feels. Base them on the site's real content and audience; at least one should keep the brand colour if there is one. Ask which to take forward (into refresh or redesign).
+After a short audit summary (score, verdict, top five findings), offer **three directions that differ from each other and from the current site**, each as a Direction card (see `../fresh-coat/SKILL.md` §2): dials, colour, type, surface, signature, and one line on what it changes about how the site feels. Show them, don't only describe them: render the options board from `../fresh-coat/SKILL.md` §1b, with each direction as a mini hero in its real palette and fonts, plus palettes and font pairings the user can mix. Base them on the site's real content and audience; at least one should keep the brand colour if there is one. Ask which to take forward (into refresh or redesign).
 
 ## 4. Refresh or redesign
 
@@ -104,7 +104,7 @@ Files: edit app/globals.css, app/page.tsx · create app/tokens.css · delete non
 
 **Refresh:** load `tokens.md`, `color.md`, `typography.md`. Build the token layer (map onto existing variable names where they exist), swap the type and palette, unify spacing and radii, fix every Tell and Bug in place. Copy changes only where a copy tell was found, each listed before and after.
 
-**Redesign:** run the fresh-coat Direction and Story steps (`../fresh-coat/SKILL.md` §2 and §3) using the site's own content as the material, then rebuild page by page, most visited first, shared components and nav before pages. New sections or claims the site never had are suggested to the user, not added.
+**Redesign:** unless the user has already picked a look, let them choose it first (`../fresh-coat/SKILL.md` §1b: category references, an options board, one pick each). Then run the fresh-coat Direction and Story steps (§2 and §3) using the site's own content as the material, then rebuild page by page, most visited first, shared components and nav before pages. New sections or claims the site never had are suggested to the user, not added.
 
 ## 5. Check and hand back
 

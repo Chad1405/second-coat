@@ -1,7 +1,7 @@
 {
   "name": "second-coat",
   "description": "Two design skills that keep AI-built websites from looking AI-built: fresh-coat (build from scratch) and second-coat (audit or redesign an existing site).",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": "https://github.com/Chad1405/second-coat",
   "skills": "./skills/"
 }

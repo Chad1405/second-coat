@@ -40,7 +40,18 @@ Load `discovery-and-story.md` §1. Send one message with the four essentials:
 >
 > Or say **go ahead** and I'll infer and tell you what I picked.
 
-If the prompt already answers these, or nobody can answer, skip the question. Infer what's missing and state your inferences in one line. Facts are never inferred: a missing number, quote or logo stays off the page.
+Skip a question only if the prompt already answers it. In an interactive session, the feel is never inferred, even when the rest of the brief is complete: step 1b asks it with real options. Infer only in a non-interactive run (no one can answer, such as `claude -p` or CI) or when the user says **go ahead**, and then state your inferences in one line. Facts are never inferred: a missing number, quote or logo stays off the page.
+
+### 1b. Let them choose the look
+
+Users judge a look by seeing it, not by naming adjectives. Before the Direction step, in an interactive session:
+
+1. **Look at the category.** Ask which sites they want to sit alongside, or pick three to five leaders, and screenshot their first screens. Note what visitors will expect: light or dark, type style, how much moves, how the product is shown.
+2. **Show an options board:** three directions (each a mini hero in its own palette and type, with a line on motion and the signature moment, and the reference it draws on), four palettes as real swatches with hex values, three or four font pairings set in the real fonts, and three motion levels. Render it as a visual widget or an HTML page you screenshot.
+3. **Ask for one pick each**, with `AskUserQuestion` where it exists. Picks can be mixed across directions. If two picks clash, ask how to combine them, offering concrete readings.
+4. **If they want to compare built pages**, build up to three variations as separate files sharing the same copy, and let them pick one or combine parts.
+
+Their picks are pinned choices for step 2.
 
 ### 2. Direction
 
@@ -51,7 +62,7 @@ Decide the look from the brief, then say it back in a short **Direction card**. 
 1. **Category anatomy.** What does a real site of this kind contain, and where does it put the action? (A restaurant: menu, hours, booking. A SaaS: the product doing its job, pricing, sign-up. A portfolio: the work, first.) Build from that, not from hero / features / testimonials / CTA.
 2. **Three dials** (1 to 10). Set them from the brief and the business; the user can override any:
    - **Variance**: 1 to 3 symmetric and centred; 4 to 7 offset, overlapping, mixed sizes; 8 to 10 asymmetric grids, big empty zones. Default 5 to 7.
-   - **Motion**: 1 to 3 hover and press states only; 4 to 6 plus one load or scroll moment; 7 to 10 a choreographed signature moment. Default 3. Shaders, particles and heavy effects only for tech, gaming, music or art.
+   - **Motion**: 1 to 3 hover and press states only; 4 to 6 plus one load or scroll moment; 7 to 10 a choreographed signature moment. Default 3 for services, shops and local businesses. Default 6 for tech, AI, creative tools, games and music, where visitors expect something alive on the first screen; shaders, particles and heavy effects belong only to these.
    - **Density**: 1 to 3 gallery-like and spacious; 4 to 6 normal; 7 to 10 dense, dividers instead of cards, tabular numbers. Default 4 for marketing, 6 to 7 for app screens.
 3. **Colour.** Anchor hue from meaning (`color.md` §1), one harmony (§2), 60/30/10, tinted neutrals, one accent taken from something in the subject's own world. Highlighter yellow or lime on a dark or muted base is becoming a default; use it only with a reason from the brief. Light or dark from where people use it, not from the category.
 4. **Type.** Choose the class before the font: old-style serif, Didone, slab, grotesque, humanist sans, geometric, condensed, rounded. Start from a physical thing in the subject's world (its signage, paperwork, packaging, tools) and pick the class that belongs to it. A serif headline on a pale page is not the safe answer for every brief. Then find a display face with a voice that fits and a body face for reading by browsing that class fresh (`typography.md` §1 has no font names on purpose; shortlist three, don't reuse your last pick), and a scale ratio (`typography.md` §2). Never a default sans as display. Load the faces as web fonts (a Google Fonts or Fontshare `<link>`, or self-hosted files); a font link is allowed even when CSS must be inline. Never build on a font that only some systems have, such as Palatino, Iowan, Sitka, Bahnschrift, Superclarendon, Segoe UI or Georgia as the first choice.
@@ -59,7 +70,9 @@ Decide the look from the brief, then say it back in a short **Direction card**. 
 6. **Signature idea.** Every page needs one bold idea that only this subject could have, and the first screen is built around it. Find it in the subject's own materials, documents, tools or rituals, then turn it into the page's form: a translator's tool whose hero is a source text beside its translation, an invoice that fills in as you type, a law firm page laid out like a clear letter, a bakery menu set as the chalkboard. Use the user's strongest real material where there is some (the photo of the place, the product working). Write two or three candidate ideas, discard any that would suit a different trade, and take the boldest one that still serves the main action. "A clean hero with a screenshot" is not an idea. Clean and tasteful is the floor, not the goal: a page that only follows the rules looks like a template.
 7. **Mirror test.** Would a competitor's prompt get this exact combination? Would a brief from a completely different trade? Compare the type class, light or dark, and accent hue. If any two are what you'd reach for on any brief, change one (accent first, then type class, then light or dark) and say which.
 
-Direction card (send it, then build without waiting unless the user asked to approve first):
+When the user named reference sites or chose to belong to their category, the mirror test applies to the signature idea, not to the category's conventions: match what visitors expect, and differ in the one idea only this subject has.
+
+Direction card. In an interactive session it records the user's picks from step 1b; build once they've picked. In a non-interactive run, send it and build:
 
 ```
 Direction
@@ -108,6 +121,7 @@ Load `tokens.md`. Then:
 1. Walk `ai-tells.md` against what you built. Fix every hit, or keep it and say why the brief earns it.
    Then the template test: cover the logo and the words. If the first screen and the section shapes could belong to a different business, the signature idea didn't make it into the build. Push it further before moving on.
 2. Floor checks: contrast, focus, reduced motion, target sizes, no horizontal scroll down to 320px, no raw literals past the tokens, and every input, select and button in a form or demo has an accessible name (a `<label>`, or `aria-label` when a visible label truly doesn't fit). Screenshots can't show a missing label, so read the markup for this one. Read every line of visible copy once: remove anything that looks like a placeholder, and any claim or promise the brief doesn't support, apart from assumed product features you are flagging in the handoff. Check each thing the user pinned is used at full strength on every screen, and that no colour outside a pinned palette has crept into buttons, accents or highlights.
+   **Say less.** Go section by section and delete every line that restates its heading or visual, narrates an animation, labels something obvious, or explains a colour code. Delete decoration that carries no information: dots beside the wordmark, bars above headings, scrolling text strips, annotation labels in a second font. Where a diagram needed its caption to be understood, redraw the diagram so it doesn't. Generated pages steer the visitor too much; a person designing it would trust them to read the shapes.
 3. **Look at it.** Code that reads well can still look wrong, so never hand back a page you haven't seen. Screenshot the whole page at 390, 768 and 1280 wide: `node <this skill's folder>/shot.mjs index.html shots` uses the installed Chrome or Edge with no dependencies (for a dev server or framework build, use a browser tool if the session has one). Open every image and judge it as a stranger would, against the Direction card:
    - **First screen:** does the signature idea land in one glance, with one focal point and the main action visible? Would you know whose page this is with the logo covered?
    - **Rhythm:** do sections differ in shape and density, or is it a stack of similar blocks? Is any stretch a long run of plain text or empty space?

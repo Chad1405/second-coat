@@ -69,6 +69,7 @@ The lesson from the table: **avoiding a list is not the same as deciding.** Ever
 | Coloured thick `border-left` on cards and callouts | A hairline, a background step, or nothing |
 | Hard offset shadows (`4px 4px 0 #000`) on a page that isn't otherwise neo-brutalist | Real shadows or none |
 | Container uncapped: at 1920px the grid stretches or gains columns | Cap the container (~1280 to 1440px), centre it, let gutters grow |
+| A process shown as a grid of cards, some tinted or gradient-filled to mark a difference the visitor has to decode | Draw it: nodes on one line or path, with the steps that differ drawn as a different shape. If it needs a legend, change the shape |
 
 ## Imagery and decoration
 
@@ -82,6 +83,9 @@ The lesson from the table: **avoiding a list is not the same as deciding.** Ever
 | Decorative grid or dot backgrounds with nothing on them | A plain surface, or texture that means something |
 | Scroll cues, rotated vertical text, "BETA" pills, version badges with nothing to say | Delete them |
 | Rows of identical counting marks (one dot per customer) | Set the number in type |
+| A coloured dot, circle or square beside the wordmark that isn't the real logo (it reads as a status light or a toggle) | The wordmark alone until a real mark exists |
+| Ticker or marquee strips of status text, "log lines" or features scrolling past | Delete. A moving strip is for real customer logos, and only when they exist |
+| Short accent bars or lines above every section heading | Delete. Like an eyebrow, it decorates the heading instead of letting it work |
 
 ## Copy
 
@@ -102,6 +106,7 @@ The lesson from the table: **avoiding a list is not the same as deciding.** Ever
 | Arrows glued to link text: "Learn more →" | A verb that says where it goes |
 | Middle-dot meta strings: "Design · Strategy · Growth" | Line breaks, columns or plain commas |
 | A section's last line restating its heading; the same fact printed in four places | Say each fact once, where it does work |
+| Over-explaining: captions that repeat what a visual or heading already shows, footer lines inside cards ("Decisions go to the agents"), a live status line narrating an animation, a label on every card, legends | Cut every line that a shape, position or heading already carries. If a visual only makes sense with a caption, fix the visual. Visitors infer more than a model expects |
 | An email sign-up as the closing section of every page | End on what the visitor came to do (book, buy, visit, download) |
 | Fake success: a form that shows "Thanks!" with nothing wired behind it | After a submit attempt, say it wasn't sent. List the missing endpoint in the handoff |
 
