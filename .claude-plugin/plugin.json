@@ -1,7 +1,7 @@
 {
   "name": "second-coat",
   "description": "Three design skills that keep AI-built products from looking AI-built: fresh-coat (build a site from scratch), second-coat (audit or redesign an existing site) and primer (design a logo, favicon and app icons).",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": "https://github.com/Chad1405/second-coat",
   "skills": "./skills/"
 }

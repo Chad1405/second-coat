@@ -47,9 +47,11 @@ Build three in `brand/variations/a.svg`, `b.svg`, `c.svg`, each a mark plus word
 Construction (`logo.md`): the mark on a 100 by 100 grid, whole-number coordinates, the fewest shapes that carry the idea, strokes no thinner than 6 units, counters open enough to survive 16px.
 
 ### 4. Look and test
-Put all three on one `brand/board.html`: each mark at 16, 32, 64 and 256px, the lockup on the page's dark and light colours, and each in one flat colour. Screenshot it with `../fresh-coat/shot.mjs` and look:
+Put all three on one `brand/board.html`: each mark at 16, 32, 64 and 256px, the tab icon on a white tab, the lockup on the page's dark and light colours, and each in one flat colour. Screenshot it with `../fresh-coat/shot.mjs` and look:
 - At 16px, can you still tell the three apart? Is anything muddy?
 - In one colour, does it still work?
+- On a white tab, do white or pale parts vanish? If so, the tab icon gets its own dark tile (`logo.md`, Colour).
+- On the light background, does a pale accent disappear? Deepen it and turn white parts to ink for a light version.
 - Cover the name: is the mark this company's, or anyone's?
 - Walk the Logos section of `ai-tells.md`.
 
@@ -57,7 +59,7 @@ Fix the three worst problems, look once more, then show the user the board and a
 
 ### 5. Finish
 1. **Outline the lettering** so no font is needed: `uv run --with fonttools python <this skill>/outline.py <font.ttf> "<Name>" brand/wordmark.svg`. It prints the path and width. Get the font file from where the user's project already loads it, or Google Fonts' repository (`github.com/google/fonts`, under `ofl/<family>/`).
-2. **Write the files** in `brand/`: `logo.svg` (the lockup), `mark.svg`, `mark-mono.svg` (one flat colour), `wordmark.svg`, and `favicon.svg` (the mark, or its reduced version, simplified for 16px).
+2. **Write the files** in `brand/`: `logo.svg` (the lockup), `logo-light.svg` (for light backgrounds), `mark.svg`, `mark-mono.svg` (one flat colour), `wordmark.svg`, and `favicon.svg` (the mark, or its reduced version, simplified for 16px, on its own tile if it has white or pale parts).
 3. **Export the raster sizes:** `node <this skill>/export.mjs brand/favicon.svg brand/logo.svg brand "<background colour>"` writes `favicon-32.png`, `apple-touch-icon.png` (180), `icon-192.png`, `icon-512.png` and `og-image.png` (1200 by 630).
 4. **Wire it in** where the project has a page: the head tags from `logo.md`.
 5. **Write the rules** into `DESIGN.md` under "Brand": clear space, minimum size, the colours, what never to do with it.

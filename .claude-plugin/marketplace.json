@@ -9,7 +9,7 @@
     {
       "name": "second-coat",
       "description": "fresh-coat builds a site from scratch; second-coat audits or redesigns an existing one; primer designs the logo, favicon and app icons.",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "source": "./",
       "category": "design",
       "tags": ["design", "frontend", "ui", "ux", "web", "logo", "branding"]

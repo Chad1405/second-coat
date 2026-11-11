@@ -40,12 +40,15 @@ A product with an app or a browser tab needs a mark that works without the name,
 - Make it work in one flat colour first: black on white, white on black.
 - Then one or two brand colours. Gradients, glows and textures are for large uses only, and the flat version stays the master.
 - Check the mark on the product's own backgrounds, light and dark, at the real size.
+- **White or pale parts vanish on a light browser tab.** If the mark has any, put the tab and app icon on their own tile in the brand's dark colour (a rounded square, corners about 22% of its size). It then reads the same on every tab and home screen.
+- **Pale accents vanish on light backgrounds.** Make a light version of the lockup: deepen the accent until it's at least 3:1 against the light background, and turn anything white into the brand's ink.
 
 ## 5. Files and where they go
 
 | File | Use |
 |---|---|
 | `logo.svg` | Site header, documents, anywhere with room for the name |
+| `logo-light.svg` | The same on light backgrounds, with deepened colours |
 | `mark.svg` | Avatars, app icon artwork, anywhere square |
 | `mark-mono.svg` | One-colour printing, watermarks, overlays |
 | `wordmark.svg` | Where the mark would repeat something nearby |
