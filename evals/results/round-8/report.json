@@ -1,0 +1,329 @@
+{
+  "builds": {
+    "invoicing-terse": {
+      "with": {
+        "runs": 3,
+        "placeholders": 0,
+        "webFontRuns": 3,
+        "invented": 0,
+        "features": 20,
+        "seriousWcag": 0,
+        "overflow": 1,
+        "tells": 1,
+        "rawColours": 0,
+        "lighthouse": 88,
+        "design": 4,
+        "humanMade": 5,
+        "adherence": 1
+      },
+      "without": {
+        "runs": 3,
+        "placeholders": 0,
+        "webFontRuns": 2,
+        "invented": 7,
+        "features": 18,
+        "seriousWcag": 0,
+        "overflow": 0,
+        "tells": 4,
+        "rawColours": 0,
+        "lighthouse": 87,
+        "design": 4.18,
+        "humanMade": 5,
+        "adherence": 1
+      }
+    },
+    "law-firm-full": {
+      "with": {
+        "runs": 3,
+        "placeholders": 0,
+        "webFontRuns": 3,
+        "invented": 0,
+        "features": 5,
+        "seriousWcag": 0,
+        "overflow": 0,
+        "tells": 0,
+        "rawColours": 0,
+        "lighthouse": 92,
+        "design": 4.09,
+        "humanMade": 4,
+        "adherence": 1
+      },
+      "without": {
+        "runs": 3,
+        "placeholders": 0,
+        "webFontRuns": 0,
+        "invented": 0,
+        "features": 6,
+        "seriousWcag": 0,
+        "overflow": 0,
+        "tells": 2,
+        "rawColours": 1,
+        "lighthouse": 100,
+        "design": 4.09,
+        "humanMade": 4,
+        "adherence": 1
+      }
+    },
+    "gaming-pinned": {
+      "with": {
+        "runs": 3,
+        "placeholders": 0,
+        "webFontRuns": 3,
+        "invented": 1,
+        "features": 17,
+        "seriousWcag": 0,
+        "overflow": 0,
+        "tells": null,
+        "rawColours": 0,
+        "lighthouse": 93,
+        "design": 4.18,
+        "humanMade": 4,
+        "adherence": 1
+      },
+      "without": {
+        "runs": 3,
+        "placeholders": 0,
+        "webFontRuns": 3,
+        "invented": 1,
+        "features": 14,
+        "seriousWcag": 0,
+        "overflow": 0,
+        "tells": null,
+        "rawColours": 25,
+        "lighthouse": 93,
+        "design": 4.27,
+        "humanMade": 4,
+        "adherence": 1
+      }
+    }
+  },
+  "pairs": {
+    "lessAi": "4/9",
+    "ship": "4/9",
+    "brief": "4/9"
+  },
+  "sameness": {
+    "displayFontsWith": [
+      [
+        "Archivo",
+        2
+      ],
+      [
+        "Familjen Grotesk",
+        2
+      ],
+      [
+        "Atkinson Hyperlegible Next",
+        2
+      ]
+    ],
+    "displayFontsWithout": [
+      [
+        "Iowan Old Style",
+        3
+      ],
+      [
+        "Besley",
+        1
+      ],
+      [
+        "Piazzolla",
+        1
+      ],
+      [
+        "Bahnschrift",
+        1
+      ]
+    ],
+    "crossBriefCollisions": [
+      [
+        "Familjen Grotesk / light / accent 150",
+        2
+      ]
+    ]
+  },
+  "audits": [
+    {
+      "id": "good-site",
+      "run": 1,
+      "found": 0,
+      "planted": 0,
+      "real": 9,
+      "findings": 10,
+      "major": 1,
+      "stated": "22/27",
+      "changed": []
+    },
+    {
+      "id": "good-site",
+      "run": 2,
+      "found": 0,
+      "planted": 0,
+      "real": 8,
+      "findings": 8,
+      "major": 1,
+      "stated": "22/27",
+      "changed": []
+    },
+    {
+      "id": "planted-20",
+      "run": 1,
+      "found": 20,
+      "planted": 20,
+      "real": 27,
+      "findings": 27,
+      "major": 19,
+      "stated": "4/27",
+      "changed": []
+    },
+    {
+      "id": "planted-20",
+      "run": 2,
+      "found": 19,
+      "planted": 20,
+      "real": 28,
+      "findings": 28,
+      "major": 20,
+      "stated": "7/27",
+      "changed": []
+    },
+    {
+      "id": "wave-3",
+      "run": 1,
+      "found": 12,
+      "planted": 12,
+      "real": 24,
+      "findings": 24,
+      "major": 16,
+      "stated": "10/27",
+      "changed": []
+    },
+    {
+      "id": "wave-3",
+      "run": 2,
+      "found": 12,
+      "planted": 12,
+      "real": 22,
+      "findings": 22,
+      "major": 14,
+      "stated": "9/27",
+      "changed": []
+    }
+  ],
+  "refresh": [
+    {
+      "id": "planted-20",
+      "before": 11,
+      "after": 1,
+      "hrefs": "6/6",
+      "names": "2/2",
+      "ids": "8/8",
+      "testids": "3/3",
+      "headings": "4/6"
+    },
+    {
+      "id": "wave-3",
+      "before": 7,
+      "after": 0,
+      "hrefs": "3/3",
+      "names": "1/1",
+      "ids": "6/6",
+      "testids": "2/2",
+      "headings": "3/4"
+    }
+  ],
+  "triggers": [
+    {
+      "id": "audit-src",
+      "expect": "second-coat",
+      "fired": [
+        "second-coat"
+      ],
+      "pass": true
+    },
+    {
+      "id": "generic-inspire",
+      "expect": "second-coat",
+      "fired": [
+        "second-coat"
+      ],
+      "pass": true
+    },
+    {
+      "id": "new-cafe",
+      "expect": "fresh-coat",
+      "fired": [
+        "fresh-coat"
+      ],
+      "pass": true
+    },
+    {
+      "id": "new-landing",
+      "expect": "fresh-coat",
+      "fired": [
+        "fresh-coat"
+      ],
+      "pass": true
+    },
+    {
+      "id": "not-design",
+      "expect": "none",
+      "fired": [],
+      "pass": true
+    },
+    {
+      "id": "restyle",
+      "expect": "second-coat",
+      "fired": [
+        "second-coat"
+      ],
+      "pass": true
+    }
+  ],
+  "asks": {
+    "wroteFile": false,
+    "turns": 4
+  },
+  "bars": [
+    {
+      "name": "Zero invented business claims in fresh-coat runs",
+      "pass": false,
+      "detail": "4 found"
+    },
+    {
+      "name": "Zero serious WCAG failures in fresh-coat runs",
+      "pass": true,
+      "detail": "0 elements"
+    },
+    {
+      "name": "At least 80% of planted faults found",
+      "pass": true,
+      "detail": "98%"
+    },
+    {
+      "name": "Few false alarms (at least 90% of findings real)",
+      "pass": true,
+      "detail": "99%"
+    },
+    {
+      "name": "Looks less AI-made than no skill in blind picks (over 60%)",
+      "pass": false,
+      "detail": "4/9"
+    },
+    {
+      "name": "Judges would ship it over no skill (over 50%)",
+      "pass": false,
+      "detail": "4/9"
+    },
+    {
+      "name": "No visible placeholders in fresh-coat runs",
+      "pass": false,
+      "detail": "1 found"
+    },
+    {
+      "name": "No two briefs converging on one look",
+      "pass": false,
+      "detail": "1 collisions"
+    }
+  ]
+}
