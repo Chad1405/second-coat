@@ -1,0 +1,14 @@
+[
+  {"id":"W01","fault":"Default cream paper, high-contrast serif and terracotta accent with no brand reason"},
+  {"id":"W02","fault":"One italic word inside an otherwise roman heading"},
+  {"id":"W03","fault":"Monospace used as a costume on small labels"},
+  {"id":"W04","fault":"Tracked-capitals eyebrow labels above headings"},
+  {"id":"W05","fault":"Middle-dot meta strings"},
+  {"id":"W06","fault":"Em-dashes used habitually through the copy"},
+  {"id":"W07","fault":"Invented looking metrics (12,000+ teams, 99.9%)"},
+  {"id":"W08","fault":"Text-only logo wall of placeholder companies such as Nexus and Acme"},
+  {"id":"W09","fault":"A card nested inside a card"},
+  {"id":"W10","fault":"Thick coloured border-left on a callout"},
+  {"id":"W11","fault":"Email sign-up as the closing section for a product where it is not the goal"},
+  {"id":"W12","fault":"Sign-up form that shows a fake success message with nothing behind it"}
+]

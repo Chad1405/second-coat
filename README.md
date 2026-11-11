@@ -58,6 +58,10 @@ The guidance is paraphrased and combined from:
 - **Hallmark** skill: the hard floor, the ask-once step, the anti-template rules, and redesign's "keep the content and wiring" contract.
 - **Impeccable** skill ([pbakaus/impeccable](https://github.com/pbakaus/impeccable)): the craft floor, the refuse list, bounded verification passes.
 - **Taste** skill ([Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)): the variance / motion / density dials, copy budgets, banned copy patterns, gating effects by business type.
+- **Nielsen Norman Group** ([nngroup.com](https://www.nngroup.com/)): how people scan pages, Jakob's law, what builds trust. Paraphrased in `discovery-and-story.md` §3.
+- **GOV.UK content design guide** ([gov.uk/guidance/content-design](https://www.gov.uk/guidance/content-design)): plain English, sentence length, button and link wording. Paraphrased in `discovery-and-story.md` §3.
+- ***Refactoring UI*** by Adam Wathan and Steve Schoger ([refactoringui.com](https://www.refactoringui.com/)): the finishing details in `layout-and-ux.md` §7. Paraphrased; buy the book for the real thing.
+- **Material Design 3 colour system** ([m3.material.io](https://m3.material.io/styles/color/system/overview)): tonal palettes and colour roles in `color.md` §4.
 - WCAG 2.2 for contrast and target sizes.
 
 Further Figma reading worth folding in later: [font pairings](https://www.figma.com/resource-library/font-pairings/), [types of color palettes](https://www.figma.com/resource-library/types-of-color-palettes/), [responsive website design](https://www.figma.com/resource-library/responsive-website-design/), [landing page examples](https://www.figma.com/resource-library/landing-page-examples/), [pricing page best practices](https://www.figma.com/resource-library/pricing-page-best-practices/), [web design trends](https://www.figma.com/resource-library/web-design-trends/).

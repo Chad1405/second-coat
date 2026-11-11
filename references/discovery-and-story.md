@@ -1,6 +1,6 @@
 # Discovery and story
 
-Sources: Figma Resource Library, *User-centered design questions*, *What is UX design*, *Storytelling in design*. Paraphrased.
+Sources: Figma Resource Library, *User-centered design questions*, *What is UX design*, *Storytelling in design*; Nielsen Norman Group; GOV.UK content design guide. Paraphrased.
 
 Generic sites come from generic inputs. Most AI tells disappear when the page is built from real answers about real visitors. Ask before designing.
 
@@ -50,9 +50,34 @@ Rules:
 - The headings alone, read in order, should tell the story.
 - Build from the anatomy of the category: a restaurant site is built around the menu, hours and booking; a band around dates and music; a consultancy around the work and how to hire. Not around a generic hero / features / testimonials / CTA template.
 
+## 3. How people read the page, and how to write for it
+
+From Nielsen Norman Group's reading and trust research and the GOV.UK content design guide. Paraphrased.
+
+**People scan, they don't read.**
+- Put the conclusion first in every section (inverted pyramid): the answer, then the detail, then the background.
+- Front-load headings, sentences, links and list items with the words people are looking for. "Opening hours" beats "When you can visit us".
+- Most attention lands on the first screen, so it carries the offer and the action. People do scroll when the first screen promises something worth it.
+- Break long text into short paragraphs, lists and meaningful headings. One idea per paragraph.
+
+**Follow conventions for the basics only** (Jakob's law: visitors spend most of their time on other sites). Logo top-left linking home, nav across the top or behind a menu on phones, contact details in the footer, links that look like links, buttons that look like buttons. That's the whole list. It is not a reason to make the page itself look like other pages: section layouts, the hero, how the offer is shown and the overall composition should be specific to this subject. A tidy stack of cards that follows every convention is a template.
+
+**Trust comes from four things:** a page that looks cared for, upfront disclosure (price, fees, who you are, what happens next), content that is complete and correct, and signs of a real business (address, people, contact routes). Hiding the price or the catch costs more trust than showing it.
+
+**Plain English (GOV.UK):**
+- Start from what the visitor needs to do, not what the business wants to say.
+- Short sentences, about 25 words at most. Everyday words. Active voice. Talk to the visitor as "you".
+- Sentence case for headings, buttons and labels.
+- Buttons and links start with a verb and say what happens ("Book a free call", "Download the menu"). Link text makes sense out of context; never "click here".
+- Error messages say what went wrong and how to fix it, in the visitor's words.
+- Put an answer where the question comes up rather than collecting everything in an FAQ. Keep an FAQ only for the real questions asked just before acting.
+
 ## Audit checks
 
 - Five-second test: could a first-time visitor say what this is and what to do next?
 - Read only the headings in order. Do they tell a coherent story that answers the visitor's questions in sequence?
 - Find filler that doesn't advance the story: generic feature grids, vague slogans, duplicate CTAs.
 - Count the steps to complete the main task.
+- Read the first sentence of each section alone. Does it carry the point, or is the point buried at the end?
+- Look for missing basics: price or how pricing works, address or contact, who runs it, what happens after the action.
+- Flag sentences over ~25 words, title-case headings, and buttons or links that don't start with a verb or say where they go.

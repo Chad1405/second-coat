@@ -1,0 +1,10 @@
+{
+  "name": "second-coat-evals",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "axe-core": "4.10.3",
+    "lighthouse": "12.6.1",
+    "puppeteer-core": "24.10.0"
+  }
+}

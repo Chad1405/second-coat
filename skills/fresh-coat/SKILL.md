@@ -14,11 +14,13 @@ Shared references live in `../../references/` relative to this file. Load them w
 
 These apply to every output, even if you read nothing else:
 
-1. **Never invent proof.** No made-up numbers, testimonials, client logos, case studies, names or quotes. Use the user's real material, a clearly marked slot, or nothing.
-2. **Tokens first.** Every colour, font, size, space, radius, shadow and duration is a CSS custom property declared once. No literals past the token block.
-3. **One primary action per view**, and it names what happens.
-4. **Accessible by default:** contrast 4.5:1 body / 3:1 large text and UI, visible `:focus-visible`, `prefers-reduced-motion` fallback, 44px touch targets, alt text, no horizontal scroll from 320px up.
-5. **No Wave 1 to 3 defaults as a reflex** (`ai-tells.md`): purple-blue gradients, default sans as display, eyebrows, three icon cards, glow blobs, cream+serif+terracotta, the one italic word, buzzword copy, emoji icons, fake browser chrome.
+1. **Never invent facts.** No made-up numbers, testimonials, client logos, case studies, names, quotes, prices, offers, or contact details. No promises the user didn't make ("no obligation", "we'll quote first", "cancel any time", guarantees). Where the brief leaves a product's features open, you may draft plausible, specific ones so the page has substance, and every one goes under **Assumed features** in the handoff for the owner to confirm. This covers what a product does, not quantities, certifications, security or legal compliance, and not what a service business offers, which stays to the brief.
+2. **The page always looks finished.** Never show a placeholder: no "Slot:", "goes here", "TBC", "[phone number]", "Add your…", dashed empty boxes or grey picture blocks. If a fact or picture is missing, write around it or leave that part out ("Opening soon", not "Opening: date to confirm"). Compose so the page doesn't need the missing thing. Missing items go in the handoff and in HTML comments, never on the page. The only exception is a user who asks for visible placeholders.
+3. **Tokens first.** Every colour, font, size, space, radius, shadow and duration is a CSS custom property declared once. No literals past the token block.
+4. **One primary action per view**, and it names what happens.
+5. **Accessible by default:** contrast 4.5:1 body / 3:1 large text and UI, visible `:focus-visible`, `prefers-reduced-motion` fallback, 44px touch targets, alt text, no horizontal scroll from 320px up. At 320px, the longest word in the largest heading must fit: give display sizes a low `clamp()` floor and never set `white-space: nowrap` or a fixed width on headings, wordmarks or button rows.
+6. **The brief's own words win.** If the user names a look, colour, font or effect, build exactly that at full strength, even if `ai-tells.md` lists it. Don't soften "glowing neon" into one tasteful accent. Only rules 1, 2 and 5 still apply.
+7. **No Wave 1 to 3 defaults as a reflex** (`ai-tells.md`) when the brief leaves the choice open: purple-blue gradients, default sans as display, eyebrows, three icon cards, glow blobs, cream+serif+terracotta, the one italic word, buzzword copy, emoji icons, fake browser chrome.
 
 ## Flow
 
@@ -38,22 +40,24 @@ Load `discovery-and-story.md` §1. Send one message with the four essentials:
 >
 > Or say **go ahead** and I'll infer and tell you what I picked.
 
-If the prompt already answers these, or nobody can answer, skip the question. Infer what's missing and state your inferences in one line. Facts are never inferred: a missing number, quote or logo stays missing.
+If the prompt already answers these, or nobody can answer, skip the question. Infer what's missing and state your inferences in one line. Facts are never inferred: a missing number, quote or logo stays off the page.
 
 ### 2. Direction
 
-Decide the look from the brief, then say it back in a short **Direction card**. Load `color.md` and `typography.md`.
+Decide the look from the brief, then say it back in a short **Direction card**. Load `color.md` and `typography.md`. Anything the user pinned is fixed; steps 2 to 7 only fill in what they left open, and the mirror test doesn't apply to pinned choices.
+
+**When the user pins a look, commit to it fully.** Their words beat every default in this skill, including the AI-tell list. Use the pinned look everywhere and at full strength, not toned down to look tasteful: a pinned gradient is big and vivid, a pinned glow really glows, a pinned font is used for every piece of text. If they pinned colours, every accent, button and highlight comes from those colours; never add a contrasting accent "from the subject's world". Make the page distinctive through layout, copy, depth and the signature moment, never by moving away from what they asked for.
 
 1. **Category anatomy.** What does a real site of this kind contain, and where does it put the action? (A restaurant: menu, hours, booking. A SaaS: the product doing its job, pricing, sign-up. A portfolio: the work, first.) Build from that, not from hero / features / testimonials / CTA.
 2. **Three dials** (1 to 10). Set them from the brief and the business; the user can override any:
    - **Variance**: 1 to 3 symmetric and centred; 4 to 7 offset, overlapping, mixed sizes; 8 to 10 asymmetric grids, big empty zones. Default 5 to 7.
    - **Motion**: 1 to 3 hover and press states only; 4 to 6 plus one load or scroll moment; 7 to 10 a choreographed signature moment. Default 3. Shaders, particles and heavy effects only for tech, gaming, music or art.
    - **Density**: 1 to 3 gallery-like and spacious; 4 to 6 normal; 7 to 10 dense, dividers instead of cards, tabular numbers. Default 4 for marketing, 6 to 7 for app screens.
-3. **Colour.** Anchor hue from meaning (`color.md` §1), one harmony (§2), 60/30/10, tinted neutrals, one accent. Light or dark from where people use it, not from the category.
-4. **Type.** A display face with a voice that fits, a body face for reading, a scale ratio (`typography.md` §2). Never a default sans as display.
+3. **Colour.** Anchor hue from meaning (`color.md` §1), one harmony (§2), 60/30/10, tinted neutrals, one accent taken from something in the subject's own world. Highlighter yellow or lime on a dark or muted base is becoming a default; use it only with a reason from the brief. Light or dark from where people use it, not from the category.
+4. **Type.** Choose the class before the font: old-style serif, Didone, slab, grotesque, humanist sans, geometric, condensed, rounded. Start from a physical thing in the subject's world (its signage, paperwork, packaging, tools) and pick the class that belongs to it. A serif headline on a pale page is not the safe answer for every brief. Then find a display face with a voice that fits and a body face for reading by browsing that class fresh (`typography.md` §1 has no font names on purpose; shortlist three, don't reuse your last pick), and a scale ratio (`typography.md` §2). Never a default sans as display. Load the faces as web fonts (a Google Fonts or Fontshare `<link>`, or self-hosted files); a font link is allowed even when CSS must be inline. Never build on a font that only some systems have, such as Palatino, Iowan, Sitka, Bahnschrift, Superclarendon, Segoe UI or Georgia as the first choice.
 5. **Surface.** One radius family (sharp 2 to 6px, soft 8 to 16px, or round 12 to 24px), one shadow style, one border style.
-6. **Signature.** The one thing a visitor remembers: the user's strongest real material, shown at its best on the first screen (the photo of the place, the product working, the price set huge because it's the offer).
-7. **Mirror test.** Would a competitor's prompt get this exact combination? If yes, change one axis (accent first, then type, then layout) and say which.
+6. **Signature idea.** Every page needs one bold idea that only this subject could have, and the first screen is built around it. Find it in the subject's own materials, documents, tools or rituals, then turn it into the page's form: a translator's tool whose hero is a source text beside its translation, an invoice that fills in as you type, a law firm page laid out like a clear letter, a bakery menu set as the chalkboard. Use the user's strongest real material where there is some (the photo of the place, the product working). Write two or three candidate ideas, discard any that would suit a different trade, and take the boldest one that still serves the main action. "A clean hero with a screenshot" is not an idea. Clean and tasteful is the floor, not the goal: a page that only follows the rules looks like a template.
+7. **Mirror test.** Would a competitor's prompt get this exact combination? Would a brief from a completely different trade? Compare the type class, light or dark, and accent hue. If any two are what you'd reach for on any brief, change one (accent first, then type class, then light or dark) and say which.
 
 Direction card (send it, then build without waiting unless the user asked to approve first):
 
@@ -62,9 +66,9 @@ Direction
 - Job: <the one action> · audience: <who>
 - Dials: variance 6 · motion 3 · density 4
 - Colour: <harmony>, <anchor> + <accent>, <light/dark> because <use scene>
-- Type: <display> / <body>, scale <ratio>
+- Type: <display> / <body>, scale <ratio>, because <the detail in the subject it echoes>
 - Surface: <radius family>, <shadow>, <border>
-- Signature: <the memorable thing>
+- Signature idea: <the bold idea, and the subject material it comes from>
 - Sections: <hero → … → close>
 - Real: <what the user gave> · Missing: <proof we won't fake>
 - Assumed: <inferences>
@@ -72,12 +76,20 @@ Direction
 
 ### 3. Story
 
-Load `discovery-and-story.md` §2 and `layout-and-ux.md`. Plan sections from the visitor's questions in order. Five to eight sections including hero and footer. The headings alone should read as the story. Cut any section that doesn't move it forward.
+Load `discovery-and-story.md` §2 and §3, and `layout-and-ux.md`. Plan sections from the visitor's questions in order. Five to eight sections including hero and footer. The headings alone should read as the story. Cut any section that doesn't move it forward.
+
+**Depth.** The page has to read as if someone who knows this trade wrote it. Give it substance that needs no invented facts:
+- How the work really runs: its terms, documents, steps, rules and common frustrations. General truths about a trade aren't claims about this business.
+- A worked example with the numbers or wording labelled as an example.
+- Where it suits, one small thing to try: a calculator, a before and after, a sample document.
+- A plain answer to the questions someone asks just before acting.
+
+Every section should carry something a generic page for this category wouldn't have. A complete, specific page beats a sparse, tasteful one.
 
 Copy budgets:
 - Hero: headline 2 to 8 words, one sentence of 12 to 30 words, one or two actions.
 - Section heading 1 to 6 words; card or item body 25 words max.
-- Roughly 80 words per screen; around 900 for a whole landing page.
+- Roughly 80 words per screen; 900 to 1,400 for a whole landing page.
 - Write in the product's own nouns. No buzzwords, no "Learn more", no em-dash habit.
 
 ### 4. Build
@@ -85,23 +97,32 @@ Copy budgets:
 Load `tokens.md`. Then:
 
 1. **Tokens and base CSS** from the direction (`tokens.md` starter, values replaced). In an existing framework, map onto its names.
-2. **Hero and nav first.** Check it at 1280×800: headline, sentence, action and visual all visible. Then the rest.
-3. **Show the real thing.** The user's photos, screenshots of the real product, real place. If none, strong type at scale beats a filler picture. Mark every placeholder as a slot with its size and what belongs there.
-4. **States.** Every control: default, hover, focus-visible, active, disabled, loading, error. Forms with nothing behind them show no fake success.
+2. **Hero and nav first.** Screenshot it at 1280 and 390 (`shot.mjs`, step 5) before building further: headline, sentence, action and visual all visible, and the signature idea reads. Then the rest.
+3. **Show the real thing.** The user's photos, screenshots of the real product, real place. If none, strong type at scale, a working demo or a composition built from the page's real content beats a filler picture or an empty frame.
+4. **States.** Every control: default, hover, focus-visible, active, disabled, loading, error. A form with nothing behind it never shows success: only after a submit attempt, say plainly that it wasn't sent and give another way to get in touch if one exists.
 5. **Motion** per the dial. `transform` and `opacity`, ease-out 150 to 300ms, never `transition: all`, content visible without JavaScript.
 6. **Invariants:** one primary button style, one container width, one radius per nesting level, more left-aligned groups than centred ones, varied section spacing.
 
 ### 5. Check
 
 1. Walk `ai-tells.md` against what you built. Fix every hit, or keep it and say why the brief earns it.
-2. Floor checks: contrast, focus, reduced motion, target sizes, no horizontal scroll, no raw literals past the tokens.
-3. If a browser is available, screenshot at 390, 768, 1280 and 1440 wide. Look at them before declaring done: one focal point per view, groups read as groups, nothing overflows.
-4. One fix pass, one confirming look. Don't loop.
+   Then the template test: cover the logo and the words. If the first screen and the section shapes could belong to a different business, the signature idea didn't make it into the build. Push it further before moving on.
+2. Floor checks: contrast, focus, reduced motion, target sizes, no horizontal scroll down to 320px, no raw literals past the tokens, and every input, select and button in a form or demo has an accessible name (a `<label>`, or `aria-label` when a visible label truly doesn't fit). Screenshots can't show a missing label, so read the markup for this one. Read every line of visible copy once: remove anything that looks like a placeholder, and any claim or promise the brief doesn't support, apart from assumed product features you are flagging in the handoff. Check each thing the user pinned is used at full strength on every screen, and that no colour outside a pinned palette has crept into buttons, accents or highlights.
+3. **Look at it.** Code that reads well can still look wrong, so never hand back a page you haven't seen. Screenshot the whole page at 390, 768 and 1280 wide: `node <this skill's folder>/shot.mjs index.html shots` uses the installed Chrome or Edge with no dependencies (for a dev server or framework build, use a browser tool if the session has one). Open every image and judge it as a stranger would, against the Direction card:
+   - **First screen:** does the signature idea land in one glance, with one focal point and the main action visible? Would you know whose page this is with the logo covered?
+   - **Rhythm:** do sections differ in shape and density, or is it a stack of similar blocks? Is any stretch a long run of plain text or empty space?
+   - **Alignment and consistency:** shared left edges, one container width, matching gaps between like things, buttons and cards that look like one family.
+   - **Richness:** does the page show the subject (its material, documents, tools, places), or only describe it? Thin and "restrained" loses to specific and made.
+   - **Phone:** nothing clipped or overflowing, tap targets apart, the main action reachable without hunting.
+   - **Copy you can now see:** any placeholder, made-up quote, name, number or promise that slipped through.
+   Write down the three worst problems, fix them, and screenshot once more to confirm.
+4. One fix pass, one confirming look. Don't loop. If no browser can run at all, say so in the handoff rather than claiming the page was checked.
 
 ### 6. Hand back
 
 - The Direction card, updated with anything that changed.
 - **Assumed:** every inference.
-- **Slots:** every placeholder, its size, and what should go there.
+- **Assumed features:** every product feature on the page that the brief didn't state, for the owner to confirm or remove.
+- **Add before launch:** everything left off the page for lack of real material, and where it would go.
 - **Next best material:** the one real thing that would most improve the page.
 - One line: *Want an audit later? Run second-coat on it.*

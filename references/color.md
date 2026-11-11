@@ -1,6 +1,6 @@
 # Colour
 
-Sources: Figma Resource Library, *Color combinations* and *Design token architecture*, plus WCAG. Paraphrased. Figures tagged [std] are standard practice, not from the Figma article.
+Sources: Figma Resource Library, *Color combinations* and *Design token architecture*; Material Design 3 colour system (§4); plus WCAG. Paraphrased. Figures tagged [std] are standard practice, not from the Figma article.
 
 ## 1. Start from meaning, not from a swatch
 
@@ -65,6 +65,20 @@ OKLCH keeps perceived lightness consistent across hues, so a ramp looks even and
 - Neutrals carry a trace of the anchor hue (chroma 0.005 to 0.03). Zero-chroma grey looks unfinished next to a brand colour.
 - Avoid pure `#000` and `#fff` for text and surfaces. Near-black on off-white reads as designed.
 - For dark mode, don't invert. Remap the semantic tokens (see `tokens.md`): surfaces step up in lightness for elevation, accent desaturates slightly, body text sits around 90% lightness, not 100%.
+
+### Tone-based palettes and roles
+
+From Material Design 3's colour system. Paraphrased.
+
+- **Build every hue as a tonal ramp** from 0 (black) to 100 (white), then choose colours by tone. Material uses its HCT space, where tone matches perceived lightness; OKLCH lightness is close enough to work the same way here.
+- **Contrast from tone distance.** In Material's system, two tones 40 apart meet 3:1 and 50 apart meet 4.5:1. Treat that as a quick way to pick pairs, then confirm with a real contrast check, because OKLCH lightness isn't identical to HCT tone.
+- **Name colours by role, each with its "on" partner:** primary / on-primary, a softer primary container / on-container, surface / on-surface, plus a few surface levels for raised areas and an outline. Every filled colour gets a text colour chosen to pass on it.
+- **One seed, three accents.** Primary from the seed hue, secondary as a quieter version of it, tertiary from a different hue for contrast. The tertiary is where a palette gets its character; most pages need only primary plus neutrals.
+- **Dark mode reuses the same ramps at different tones** (light surfaces become tone 6 to 12, text tone 90), which is why the token remap in `tokens.md` works.
+
+### Breaking the current default
+
+In this repo's evals, five of six free-choice builds landed on a light page with a red-toned accent (OKLCH hue roughly 20 to 45). Treat that combination as a default now. Take the seed hue from something physical in the subject's world, and if it lands in that band on a light page, check whether a dark page, a different tertiary or a neighbouring hue serves the brief better.
 
 ## 5. Contrast and accessibility [std]
 

@@ -34,6 +34,8 @@ The lesson from the table: **avoiding a list is not the same as deciding.** Ever
 | Dark mode chosen because the category "looks techy" | Pick light or dark from where and when people use it |
 | Grey text on a coloured background | Tint secondary text from the surface hue, check contrast |
 | Cream paper + serif display + terracotta/clay accent, unprompted | Fine if the brand earns it. As a default, move one axis: accent first, paper second, face last |
+| Highlighter yellow or lime as the one accent, unprompted | Take the accent from something in the subject's own world |
+| A sturdy serif headline, pale page and one red accent on every kind of brief | Choose the type class, light or dark, and accent from this subject. If another trade would get the same three, change one |
 
 ## Typography
 
@@ -93,14 +95,15 @@ The lesson from the table: **avoiding a list is not the same as deciding.** Ever
 | "Where X meets Y", questions as headlines, colon headings ("Speed: redefined"), exclamation marks | A plain statement of what it is or does |
 | Invented capitalised concepts ("the Proof Layer", "Flow Engine") that the product doesn't actually call anything | The product's real names for things |
 | Hero copy that runs long: a headline of 12 words, a paragraph of 60 | Headline 2 to 8 words, one supporting sentence of 12 to 30 words |
-| Placeholder people and companies: Jane Doe, John Smith, Acme, Nexus | Real names from the user, or leave a clearly marked slot |
-| **Invented numbers, testimonials, logos or case studies** | Never. Use the user's real proof, a marked slot, or leave it out |
+| Placeholder people and companies: Jane Doe, John Smith, Acme, Nexus | Real names from the user, or write around it |
+| **Invented numbers, testimonials, logos, case studies, prices, offers or promises** | Never. Use the user's real proof or leave it out. Plausible product features are the one exception, and only when flagged in the handoff |
+| Visible placeholders: "Slot:", "goes here", "TBC", "[phone]", dashed empty boxes | The page must look finished. Write around what's missing and list it in the handoff |
 | Stock secondary buttons: "Learn more", "Get started", "Book a demo" beside every primary | One primary action that names what happens ("See this week's menu", "Start a free trial") |
 | Arrows glued to link text: "Learn more →" | A verb that says where it goes |
 | Middle-dot meta strings: "Design · Strategy · Growth" | Line breaks, columns or plain commas |
 | A section's last line restating its heading; the same fact printed in four places | Say each fact once, where it does work |
 | An email sign-up as the closing section of every page | End on what the visitor came to do (book, buy, visit, download) |
-| Fake success: a form that shows "Thanks!" with nothing wired behind it | Leave the endpoint empty and visible until it's real |
+| Fake success: a form that shows "Thanks!" with nothing wired behind it | After a submit attempt, say it wasn't sent. List the missing endpoint in the handoff |
 
 ## Motion and interaction
 

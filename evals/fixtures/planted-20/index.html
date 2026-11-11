@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bright Tap Plumbing</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; font-family: Poppins, sans-serif; color: #222; background: #fff; }
+*:focus { outline: none; }
+.hero { height: 100vh; width: 100vw; background: linear-gradient(135deg, #7c3aed, #2563eb); color: #fff; text-align: center; padding: 96px 24px; box-sizing: border-box; }
+.hero h1 { font-size: 60px; margin: 0 0 16px; font-weight: 800; }
+.grad { background: linear-gradient(90deg, #f0abfc, #60a5fa); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn { display: inline-block; padding: 14px 28px; background: #fff; color: #5b21b6; border-radius: 999px; font-weight: 600; text-decoration: none; margin: 6px; transition: all .3s; }
+.btn:hover { transform: scale(1.05); }
+.eyebrow { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #7c3aed; text-align: center; }
+h2 { text-align: center; font-size: 34px; color: #1f1f1f; margin: 4px 0 40px; }
+section { padding: 72px 24px; animation: up .8s ease both; }
+@keyframes up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1000px; margin: auto; }
+.card { padding: 28px; border-radius: 16px; box-shadow: 0 8px 24px rgba(124,58,237,.18); text-align: center; transition: all .3s; }
+.card:hover { transform: translateY(-6px) scale(1.02); }
+.card p, .muted { color: #bdbdbd; }
+.icon { font-size: 34px; }
+.browser { max-width: 720px; margin: auto; border: 1px solid #ddd; border-radius: 12px; overflow: hidden; }
+.bar { background: #eeeeee; padding: 10px; }
+.dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; background: #ff5f56; }
+.dot.b { background: #ffbd2e; } .dot.c { background: #27c93f; }
+.screen { padding: 56px; text-align: center; color: #555555; background: #fafafa; }
+.quote { max-width: 620px; margin: auto; text-align: center; }
+.meta { text-align: center; color: #c4c4c4; }
+footer { background: #1a1a1a; color: #999; padding: 32px; text-align: center; }
+form { text-align: center; }
+input { padding: 12px; }
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <h1>Next-generation <span class="grad">plumbing</span> for everyone</h1>
+  <p>In today's fast-paced world, Bright Tap empowers homeowners with seamless, world-class plumbing solutions.</p>
+  <a class="btn" id="cta-call" href="tel:01632960111" data-testid="call">Call now</a>
+  <a class="btn" id="cta-quote" href="#quote" data-testid="quote">Get a quote</a>
+</header>
+<section id="why">
+  <p class="eyebrow">Why choose us</p>
+  <h2>Everything you need, supercharged</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🔧</div><h3>Repairs</h3><p>Robust fixes that unlock peace of mind for your home.</p><a href="/repairs">Learn more →</a></div>
+    <div class="card"><div class="icon">🔥</div><h3>Heating</h3><p>Effortless boiler care, elevated by our expert team.</p><a href="/heating">Learn more →</a></div>
+    <div class="card"><div class="icon">💧</div><h3>Drains</h3><p>Cutting-edge drain clearing that just works, every time.</p><a href="/drains">Learn more →</a></div>
+  </div>
+</section>
+<section id="demo">
+  <div class="browser"><div class="bar"><span class="dot"></span><span class="dot b"></span><span class="dot c"></span></div><div class="screen">Your booking dashboard</div></div>
+</section>
+<section id="proof">
+  <div class="quote"><p>"Bright Tap completely transformed our home. Truly a game-changer."</p><p class="muted">Jane Doe, CEO at Acme Inc</p></div>
+  <p class="meta">Plumbing · Heating · Drains · 24/7</p>
+</section>
+<section id="quote">
+  <h2>Get your free quote</h2>
+  <form action="/api/quote" method="post" id="quote-form" data-testid="quote-form">
+    <input name="email" type="email" placeholder="Email" aria-label="Email">
+    <input name="postcode" type="text" placeholder="Postcode" aria-label="Postcode">
+    <button class="btn" type="submit" style="background:#6d28d9;color:#fff;border:0">Send</button>
+  </form>
+</section>
+<footer><a href="/privacy" style="color:#999">Privacy</a> <p>Bright Tap Plumbing, Croydon. All rights reserved.</p></footer>
+</body>
+</html>

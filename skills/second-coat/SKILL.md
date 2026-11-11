@@ -89,6 +89,8 @@ After a short audit summary (score, verdict, top five findings), offer **three d
 - The brand, if it's real: a logo, a named colour or face, a brand file. A framework default (Tailwind indigo, Inter as display, a stock gradient) isn't a brand and can go; say so.
 - Legal text, terms and consent wording, verbatim.
 
+**Never add** visible placeholders, new claims or new promises. Anything the page needs but doesn't have goes in the handoff.
+
 **Never, without a file-level plan the user approved:** delete a file, remove a route, replace a component tree, or edit tests to make things pass.
 
 Before editing, in a git project, ask the user to commit or stash so the change is one reviewable diff. Then post a short plan:

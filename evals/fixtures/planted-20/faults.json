@@ -1,0 +1,22 @@
+[
+  {"id":"F01","fault":"Purple-to-blue gradient hero background"},
+  {"id":"F02","fault":"Gradient text on one word of the main heading"},
+  {"id":"F03","fault":"Tracked-capitals eyebrow label above a heading (Why choose us)"},
+  {"id":"F04","fault":"Poppins, a default sans, used as the display face"},
+  {"id":"F05","fault":"Emoji used as icons in the feature cards"},
+  {"id":"F06","fault":"Three equal icon-heading-text feature cards as the page structure"},
+  {"id":"F07","fault":"Buzzword copy such as seamless, next-generation, empower"},
+  {"id":"F08","fault":"Filler opener: In today's fast-paced world"},
+  {"id":"F09","fault":"Arrow glued to link text (Learn more →) and a vague link label"},
+  {"id":"F10","fault":"Middle-dot meta string (Plumbing · Heating · Drains)"},
+  {"id":"F11","fault":"Hand-drawn fake browser chrome with traffic-light dots"},
+  {"id":"F12","fault":"Placeholder testimonial from Jane Doe at Acme Inc"},
+  {"id":"F13","fault":"Low-contrast light grey text on white"},
+  {"id":"F14","fault":"Focus outlines removed with no replacement"},
+  {"id":"F15","fault":"transition: all used on buttons or cards"},
+  {"id":"F16","fault":"A 100vw width that can cause horizontal overflow"},
+  {"id":"F17","fault":"Hero sized with 100vh instead of svh or dvh"},
+  {"id":"F18","fault":"Fade-up animation with no prefers-reduced-motion fallback"},
+  {"id":"F19","fault":"Hard-coded near-duplicate colours and no design tokens"},
+  {"id":"F20","fault":"Two competing primary buttons in the hero"}
+]

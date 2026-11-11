@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marsh Lane Books, secondhand books in Ludlow</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --p-slate-50: oklch(97% 0.008 215); --p-slate-200: oklch(88% 0.015 215); --p-slate-600: oklch(42% 0.03 215); --p-slate-900: oklch(22% 0.03 215);
+  --p-ochre-700: oklch(42% 0.1 75);
+  --color-bg: var(--p-slate-50); --color-text: var(--p-slate-900); --color-muted: var(--p-slate-600); --color-line: var(--p-slate-200);
+  --color-action: var(--p-ochre-700); --color-action-ink: var(--p-slate-50);
+  --font-display: "Fraunces", Georgia, serif; --font-body: "Source Sans 3", system-ui, sans-serif;
+  --text-body: 1.125rem; --text-title: 1.5rem; --text-section: clamp(2rem, 1.4rem + 2.4vw, 3.25rem); --text-display: clamp(2.75rem, 1.5rem + 5vw, 5.25rem);
+  --space-2: .5rem; --space-4: 1rem; --space-6: 1.5rem; --space-8: 2rem; --space-16: 4rem;
+  --gutter: clamp(1rem, 4vw, 3rem); --measure: 62ch; --radius: .375rem;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: clip; margin: 0; }
+body { background: var(--color-bg); color: var(--color-text); font: var(--text-body)/1.6 var(--font-body); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.08; margin: 0; text-wrap: balance; overflow-wrap: break-word; }
+p { margin: 0; max-width: var(--measure); }
+:focus-visible { outline: 2px solid var(--color-action); outline-offset: 3px; }
+.wrap { max-width: 72rem; margin-inline: auto; padding-inline: var(--gutter); }
+header { padding-block: var(--space-16); }
+h1 { font-size: var(--text-display); max-width: 15ch; }
+.lead { margin-block: var(--space-6) var(--space-8); }
+.btn { display: inline-flex; align-items: center; min-height: 2.75rem; padding-inline: var(--space-6); background: var(--color-action); color: var(--color-action-ink); border-radius: var(--radius); font-weight: 600; text-decoration: none; }
+section { padding-block: var(--space-16); border-top: 1px solid var(--color-line); }
+h2 { font-size: var(--text-section); margin-bottom: var(--space-6); }
+.split { display: grid; gap: var(--space-8); }
+@media (min-width: 48rem) { .split { grid-template-columns: 1.618fr 1fr; } }
+ul { list-style: none; margin: 0; padding: 0; }
+.stock li { padding-block: var(--space-4); border-top: 1px solid var(--color-line); }
+h3 { font-size: var(--text-title); }
+.stock p, dt { color: var(--color-muted); }
+dl { margin: 0; display: grid; gap: var(--space-2); }
+dd { margin: 0 0 var(--space-4); }
+footer { padding-block: var(--space-8); border-top: 1px solid var(--color-line); color: var(--color-muted); }
+a { color: inherit; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Secondhand books on Marsh Lane, Ludlow</h1>
+  <p class="lead">Fiction, local history and natural history, bought and sold from the same shop since we opened the door in 2011.</p>
+  <a class="btn" href="#visit" id="visit-link" data-testid="visit">See opening hours</a>
+</header>
+<main>
+  <section><div class="wrap">
+    <h2>What's on the shelves</h2>
+    <ul class="stock">
+      <li><h3>Shropshire and the Marches</h3><p>Parish histories, walking guides and old county maps.</p></li>
+      <li><h3>Natural history</h3><p>Field guides and bird books, most of them pencilled in by their last owner.</p></li>
+      <li><h3>Paperback fiction</h3><p>Three walls of it, in alphabetical order on a good day.</p></li>
+    </ul>
+  </div></section>
+  <section id="visit"><div class="wrap split">
+    <div><h2>Bring your boxes</h2><p>We buy books on Saturdays. Bring up to two boxes and we'll make you an offer while you wait.</p></div>
+    <dl><dt>Where</dt><dd>9 Marsh Lane, Ludlow SY8 1AA</dd><dt>Open</dt><dd>Tuesday to Saturday, 10 to 5</dd><dt>Phone</dt><dd><a href="tel:01584960173">01584 960173</a></dd></dl>
+  </div></section>
+</main>
+<footer><div class="wrap">Marsh Lane Books, Ludlow</div></footer>
+</body>
+</html>

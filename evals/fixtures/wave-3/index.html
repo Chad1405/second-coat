@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledgerly</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root { --paper: #f4f1ea; --ink: #2a2520; --clay: #b5533c; --line: #d9d2c3; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 Inter, sans-serif; }
+.wrap { max-width: 1100px; margin: auto; padding: 0 24px; }
+.label { font: 12px "JetBrains Mono", monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--clay); }
+h1, h2 { font-family: "Instrument Serif", serif; font-weight: 400; line-height: 1.05; margin: 12px 0 20px; }
+h1 { font-size: 76px; } h2 { font-size: 46px; }
+h1 em, h2 em { color: var(--clay); }
+header { padding: 96px 0 72px; }
+.btn { display: inline-block; background: var(--clay); color: #fff; padding: 13px 24px; border-radius: 4px; text-decoration: none; border: 0; font: inherit; }
+section { padding: 72px 0; border-top: 1px solid var(--line); }
+.stats { display: flex; gap: 64px; }
+.stats b { font: 48px "Instrument Serif", serif; display: block; }
+.logos { display: flex; gap: 40px; font: 14px "JetBrains Mono", monospace; opacity: .85; }
+.card { border: 1px solid var(--line); padding: 28px; border-radius: 8px; background: #faf7f1; }
+.card .card { margin-top: 16px; background: #fff; }
+.callout { border-left: 5px solid var(--clay); padding: 20px 24px; background: #fff; margin-top: 24px; }
+form { display: flex; gap: 10px; margin-top: 20px; }
+input { padding: 12px; flex: 1; border: 1px solid var(--line); font: inherit; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <p class="label">Bookkeeping · Reimagined · 2026</p>
+  <h1>Your books, <em>quietly</em> handled</h1>
+  <p>Ledgerly reconciles your accounts — so you don't have to — and keeps your accountant happy — every single month.</p>
+  <a class="btn" href="/signup" id="start" data-testid="start">Start free</a>
+</header>
+<section><div class="wrap">
+  <p class="label">Trusted by</p>
+  <div class="logos"><span>NEXUS</span><span>ACME</span><span>VERTEX</span><span>LUMEN</span></div>
+  <div class="stats" style="margin-top:40px"><div><b>12,000+</b>teams</div><div><b>99.9%</b>accuracy</div><div><b>4.9/5</b>rating</div></div>
+</div></section>
+<section id="how"><div class="wrap">
+  <p class="label">How it works</p>
+  <h2>Not a spreadsheet. <em>A system.</em></h2>
+  <div class="card"><h3>Connect your bank</h3><p>Ledgerly reads each transaction — and files it.</p>
+    <div class="card"><h4>Automatic rules</h4><p>Rules learn from every correction you make.</p></div>
+  </div>
+  <div class="callout">Month-end takes minutes — not days.</div>
+  <a href="/pricing" id="pricing-link">See pricing</a>
+</div></section>
+<section id="list"><div class="wrap">
+  <p class="label">Stay in the loop</p>
+  <h2>Join the newsletter</h2>
+  <form id="news" data-testid="news"><input name="email" type="email" aria-label="Email" required><button class="btn" type="submit">Subscribe</button></form>
+  <p id="msg" role="status"></p>
+</div></section>
+<footer class="wrap" style="padding:32px 24px"><a href="/terms">Terms</a></footer>
+<script>
+document.getElementById('news').addEventListener('submit', e => { e.preventDefault(); document.getElementById('msg').textContent = "Thanks! You're on the list."; });
+</script>
+</body>
+</html>

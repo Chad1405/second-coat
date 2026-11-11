@@ -1,6 +1,6 @@
 # Layout and UX
 
-Sources: Figma Resource Library, *Graphic design principles*, *UI design principles*, *Fitts's law*, *Golden ratio*, *What is UX design*. Paraphrased; [std] marks standard figures not from the articles.
+Sources: Figma Resource Library, *Graphic design principles*, *UI design principles*, *Fitts's law*, *Golden ratio*, *What is UX design*; *Refactoring UI* (§7). Paraphrased; [std] marks standard figures not from the articles.
 
 ## 1. Hierarchy, contrast, emphasis
 
@@ -59,7 +59,23 @@ Time to hit a target grows with distance and shrinks with size. Make important t
 - The fewest steps to finish the main task. Count the clicks and fields.
 - Consistent patterns, icons and controls on every page and device.
 
-## 7. Responsive [std]
+## 7. Making it look finished
+
+From *Refactoring UI* (Wathan and Schoger). Paraphrased. These are the details that separate "assembled" from "designed".
+
+- **Emphasise by de-emphasising.** When the main thing doesn't stand out, make its neighbours quieter instead of making it louder.
+- **Hierarchy is weight and colour, not just size.** Use two or three text colours (strong, normal, soft) and two weights before reaching for another font size.
+- **Soft text on a coloured background** takes a lighter or darker tint of that background's hue, never plain grey or lowered opacity.
+- **Labels are a last resort.** "12 left" beats "Stock: 12". When data explains itself, drop the label; when a label is needed, make it the quiet part.
+- **Start with too much space, then take it away.** Cramped is the more common failure, and dense layouts should be a choice.
+- **Don't fill the screen because it's there.** Give content the width it needs; a form doesn't need 1200px. Fixed-width parts (a sidebar, a form) stay fixed; only the flexible part grows.
+- **Fewer borders.** Separate things with space, a background tint or a shadow first. Not everything needs a card.
+- **Three button weights:** primary solid, secondary outlined or muted, tertiary as a plain link. Destructive actions aren't automatically big and red; they get the weight of their place in the hierarchy.
+- **Align on baselines** when a row mixes text sizes, not on box centres.
+- **Depth from light:** raised things are lighter on top and cast a shadow below. Shadows read better as two layers (a tight dark one and a wide soft one). Overlap an element across two sections to add depth without decoration.
+- **Design the empty and edge states:** no data yet, a very long name, one item where you designed for six.
+
+## 8. Responsive [std]
 
 - Design mobile-first; check 320, 375, 768, 1024, 1280, 1440, 1920.
 - Cap the container (~1280 to 1440px) and centre it. At 1920 the gutters grow; the measure and grid don't.
@@ -76,3 +92,6 @@ Time to hit a target grows with distance and shrinks with size. Make important t
 - Query `a, button, input, [role=button]` for boxes under 44×44 on mobile.
 - Count primary-styled buttons in each viewport. More than one is a hit.
 - Resize from 320 to 1920 and watch for horizontal scroll, wrapping buttons, and stretched grids.
+- Count borders and boxed cards. If most groups have both a border and a background, separate some with space instead.
+- Look for grey or semi-transparent text on coloured surfaces, and "Label: value" pairs that could be a plain phrase.
+- Check rows of mixed text sizes for baseline alignment, and content stretched to full width that doesn't need it.

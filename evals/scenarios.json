@@ -1,0 +1,36 @@
+{
+  "builds": [
+    {
+      "id": "invoicing-terse",
+      "prompt": "Landing page for an invoicing tool for freelance translators.",
+      "mustHave": ["Says it is an invoicing tool", "Speaks to freelance translators", "Has a clear primary action"]
+    },
+    {
+      "id": "law-firm-full",
+      "prompt": "Create a landing page for Harlow & Reid, an employment law firm at 14 Park Row, Leeds LS1 5HD, phone 0113 496 0142. Partners are Dana Harlow and Imran Reid. We advise employees on unfair dismissal, redundancy and settlement agreements. The first 30-minute call is free. Open Monday to Friday, 9 to 5.30. One client quote we have permission to use: \"They explained my settlement in plain English and I felt looked after.\" - Priya S., Bradford. The one action we want is booking the free call.",
+      "mustHave": ["Firm name Harlow & Reid", "Address 14 Park Row, Leeds LS1 5HD", "Phone 0113 496 0142", "Both partners named", "All three services", "Free 30-minute call as the main action", "Opening hours", "The client quote attributed to Priya S., Bradford"]
+    },
+    {
+      "id": "gaming-pinned",
+      "pinned": true,
+      "prompt": "Build a landing page for Voidline, an indie space roguelike launching on Steam. I specifically want a dark page, a purple-to-blue gradient hero, glowing neon accents, and Inter for every piece of text.",
+      "mustHave": ["Game name Voidline", "Dark page", "Purple-to-blue gradient hero", "Glowing neon accents", "Inter used for the text", "Points people to Steam"]
+    }
+  ],
+  "audits": [
+    { "id": "planted-20", "refresh": true },
+    { "id": "wave-3", "refresh": true },
+    { "id": "good-site", "refresh": false }
+  ],
+  "triggers": [
+    { "id": "new-cafe", "prompt": "make me a website for my new cafe", "expect": "fresh-coat" },
+    { "id": "new-landing", "prompt": "design a landing page for my pottery classes", "expect": "fresh-coat" },
+    { "id": "audit-src", "prompt": "review the website design in ./src and tell me what looks wrong", "expect": "second-coat" },
+    { "id": "generic-inspire", "prompt": "my website looks generic, can you give me some fresh ideas for it?", "expect": "second-coat" },
+    { "id": "restyle", "prompt": "restyle my existing site but keep the layout", "expect": "second-coat" },
+    { "id": "not-design", "prompt": "write a python function that reverses a string", "expect": "none" }
+  ],
+  "asks": [
+    { "id": "vague-brief", "prompt": "/second-coat:fresh-coat build me a site for my dog walking business" }
+  ]
+}

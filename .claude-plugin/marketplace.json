@@ -9,7 +9,7 @@
     {
       "name": "second-coat",
       "description": "fresh-coat builds a site from scratch; second-coat audits or redesigns an existing one.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "source": "./",
       "category": "design",
       "tags": ["design", "frontend", "ui", "ux", "web"]
