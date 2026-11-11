@@ -123,6 +123,19 @@ The lesson from the table: **avoiding a list is not the same as deciding.** Ever
 | Content hidden until JavaScript reveals it | Visible by default; only hide under a `.js` class |
 | Celebratory toasts for things the user can already see | Silent success |
 
+## Logos
+
+| Tell | Instead |
+|---|---|
+| A sparkle or four-point star for anything to do with AI; a brain, a circuit, connected nodes, a hexagon | A mark from the company's own name, product or material |
+| The initial in a circle or rounded square, often with a gradient | A lettermark drawn for this name, or a symbol with a reason |
+| A gradient blob, orb, swoosh or infinity loop | One flat shape that still works in one colour |
+| A lightbulb for ideas, a rocket for growth, a globe for anything international | The specific thing this company does or makes |
+| A coloured dot, circle or square beside the wordmark standing in for a logo | The wordmark alone until a real mark exists |
+| A default sans wordmark with one letter recoloured | Letterforms chosen for the name, spaced by hand |
+| Detail that turns to mud at 16px; hairline strokes | Fewer, bolder shapes, and a reduced version for small sizes |
+| A raster logo, live text in the SVG, or effects only a big screen can show | Clean vector outlines, flat first |
+
 ## Floor (these are bugs, not taste)
 
 - Text contrast under 4.5:1 (body) or 3:1 (large text, icons, focus rings, input borders).

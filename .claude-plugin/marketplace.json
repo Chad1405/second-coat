@@ -3,16 +3,16 @@
   "name": "second-coat",
   "owner": { "name": "Chad1405" },
   "metadata": {
-    "description": "Website design skills that remove the tells of AI-generated design."
+    "description": "Website and logo design skills that remove the tells of AI-generated design."
   },
   "plugins": [
     {
       "name": "second-coat",
-      "description": "fresh-coat builds a site from scratch; second-coat audits or redesigns an existing one.",
-      "version": "0.3.1",
+      "description": "fresh-coat builds a site from scratch; second-coat audits or redesigns an existing one; primer designs the logo, favicon and app icons.",
+      "version": "0.4.0",
       "source": "./",
       "category": "design",
-      "tags": ["design", "frontend", "ui", "ux", "web"]
+      "tags": ["design", "frontend", "ui", "ux", "web", "logo", "branding"]
     }
   ]
 }

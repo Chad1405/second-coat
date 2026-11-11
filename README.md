@@ -1,11 +1,12 @@
 # Second Coat
 
-Two skills for building websites with AI that don't look built by AI.
+Three skills for building websites and brands with AI that don't look built by AI.
 
 | Skill | Use it when | Command |
 |---|---|---|
 | **fresh-coat** | You're building a new site or page from scratch | `/fresh-coat a site for my bakery in Leeds` |
 | **second-coat** | You have a site and want an audit, inspiration, a refresh or a redesign | `/second-coat audit ./src` |
+| **primer** | You need a logo, app icon or favicon | `/primer a logo for Harlow & Reid, an employment law firm` |
 
 `second-coat` modes: `audit` (report only, the default), `inspire` (three new directions), `refresh` (keep the layout, replace the look), `redesign` (keep the content, rethink the page).
 
@@ -25,8 +26,12 @@ Swapping one list of defaults for another just produces the next wave. These ski
 skills/
   fresh-coat/SKILL.md      build from scratch: ask → direction → story → build → check
   second-coat/SKILL.md     audit / inspire / refresh / redesign an existing site
+  primer/SKILL.md          logo: ask → options → three variations → test at 16px → files
+  primer/outline.py        turns a wordmark into vector outlines from a font file
+  primer/export.mjs        exports favicon, app icons and the link-preview image
 references/
   ai-tells.md              the catalogue of AI tells, by area, each with its fix
+  logo.md                  logo types, principles, construction and the files a product needs
   color.md                 colour meaning, harmonies, 60/30/10, OKLCH, contrast
   typography.md            font choice by voice, modular scales, setting text
   layout-and-ux.md         hierarchy, spacing, golden ratio, Fitts's law, UI principles

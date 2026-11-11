@@ -28,6 +28,9 @@
     { "id": "audit-src", "prompt": "review the website design in ./src and tell me what looks wrong", "expect": "second-coat" },
     { "id": "generic-inspire", "prompt": "my website looks generic, can you give me some fresh ideas for it?", "expect": "second-coat" },
     { "id": "restyle", "prompt": "restyle my existing site but keep the layout", "expect": "second-coat" },
+    { "id": "new-logo", "prompt": "design a logo for my dog grooming business", "expect": "primer" },
+    { "id": "app-icon", "prompt": "I need an app icon and a favicon for my habit tracker", "expect": "primer" },
+    { "id": "site-has-logo", "prompt": "build a landing page for my bakery, we already have a logo in ./brand", "expect": "fresh-coat" },
     { "id": "not-design", "prompt": "write a python function that reverses a string", "expect": "none" }
   ],
   "asks": [

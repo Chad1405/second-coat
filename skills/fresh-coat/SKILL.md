@@ -26,7 +26,7 @@ These apply to every output, even if you read nothing else:
 
 ### 0. Read first
 
-Look at the project before asking: `package.json`, framework, Tailwind or CSS variables, font links, any brand files, logo, `DESIGN.md`. Anything the user already owns (a brand colour, a font, a logo) is kept. If there's already a built site here and the user wants it changed, stop and use **second-coat**.
+Look at the project before asking: `package.json`, framework, Tailwind or CSS variables, font links, any brand files, logo, `DESIGN.md`. Anything the user already owns (a brand colour, a font, a logo) is kept. If there's no logo, set the name as a wordmark in the display face; never draw a stand-in mark beside it, and offer **primer** in the handoff. If there's already a built site here and the user wants it changed, stop and use **second-coat**.
 
 ### 1. Ask once
 
@@ -139,4 +139,5 @@ Load `tokens.md`. Then:
 - **Assumed features:** every product feature on the page that the brief didn't state, for the owner to confirm or remove.
 - **Add before launch:** everything left off the page for lack of real material, and where it would go.
 - **Next best material:** the one real thing that would most improve the page.
+- No logo yet? One line: *Want a logo, favicon and link-preview image? Run primer.*
 - One line: *Want an audit later? Run second-coat on it.*
