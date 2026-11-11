@@ -40,7 +40,7 @@ Load `discovery-and-story.md` §1. Send one message with the four essentials:
 >
 > Or say **go ahead** and I'll infer and tell you what I picked.
 
-Skip a question only if the prompt already answers it. In an interactive session, the feel is never inferred, even when the rest of the brief is complete: step 1b asks it with real options. Infer only in a non-interactive run (no one can answer, such as `claude -p` or CI) or when the user says **go ahead**, and then state your inferences in one line. Facts are never inferred: a missing number, quote or logo stays off the page.
+Skip a question only if the prompt already answers it. In an interactive session, the feel is never inferred, even when the rest of the brief is complete: step 1b asks it with real options. Infer only when the user says **go ahead**, or says nobody is available to answer, and then state your inferences in one line. Running headless isn't a reason to skip asking: if the prompt doesn't say nobody can answer, ask. Facts are never inferred: a missing number, quote or logo stays off the page.
 
 ### 1b. Let them choose the look
 
@@ -72,7 +72,7 @@ Decide the look from the brief, then say it back in a short **Direction card**. 
 
 When the user named reference sites or chose to belong to their category, the mirror test applies to the signature idea, not to the category's conventions: match what visitors expect, and differ in the one idea only this subject has.
 
-Direction card. In an interactive session it records the user's picks from step 1b; build once they've picked. In a non-interactive run, send it and build:
+Direction card. In an interactive session it records the user's picks from step 1b; build once they've picked. When nobody can answer, send it and build:
 
 ```
 Direction
